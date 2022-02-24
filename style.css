@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  font-family: Redressed, cursive;
+  font-size: 20px;
+}
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url("sakuratrees.jpg");
+  background-repeat:no-repeat;
+  background-attachment:scroll;
+  background-size: cover;
+}
+
+.flexParent {
+  display: flex;
+}
+
+.flexParent div {
+  margin: 20px;
+  padding: 10px;
+}
+
+.flexParent > div {
+  background-color:rgba(255, 212, 249, 0.5);
+  max-width: 500px;
+}
+
+.flexParent > div > p {
+  /* text-decoration: underline; */
+}
+
+.flexParent > div > p:first-child {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.flexParent > div > p:nth-child(2) {
+  text-decoration: overline;
+  font-weight: bolder;
+}
+p + p {
+  margin-top: 15px;
+}
+
+h1 + p {
+ margin-right: inherit;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: #ff0072;
+
+}
+
+a:hover {
+  text-decoration: underline;
+  color: violet;
+}
